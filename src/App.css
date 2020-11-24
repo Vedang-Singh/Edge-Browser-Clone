@@ -12,6 +12,10 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
     background: #c9c9c9;
 }
 

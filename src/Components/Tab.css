@@ -29,13 +29,7 @@
     float: right;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #eee;
-    color: #555;
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 .imgbg {
     background-image: url(https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500000000);
