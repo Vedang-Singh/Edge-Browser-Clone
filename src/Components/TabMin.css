@@ -1,0 +1,23 @@
+.card {
+    height: 180px;
+    width: 200px;
+    background: #fff;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500000000);
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.card div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}

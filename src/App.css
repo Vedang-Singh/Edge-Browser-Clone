@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined');
+
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c9c9c9;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span {
+    padding: 15px 20px;
+    color: #555;
+    font-size: 30px !important;
+}
+
+.tab-nav {
+    font-size: 17px!important;
+    padding: 17px;
+}
+
+span.tab-nav.active {
+    border-bottom: 3px solid #59adf7;
+}
+
+.bars {
+    color: #777;
+}
+
+.app-main{
+    margin-top: 90px;
+    padding: 0 10px 30px 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    row-gap: 26px;
+}
+
+.addNewBtn{
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    right: 50px;
+    background: #6166db;
+    border-radius: 500px;
+    position: fixed;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px #00000040;
+}
