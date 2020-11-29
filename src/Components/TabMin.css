@@ -5,6 +5,7 @@
     position: relative;
     background-image: url(https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500000000);
     background-size: cover;
+    background-position: center;
     overflow: hidden;
     margin-left: 20px;
 }

@@ -1,10 +1,10 @@
 import TabMin from "./TabMin";
 
-export default function TabList({ tabArr, tabShown, showTab }) {
+export default function TabList({imageOfTheDayUrl, tabArr, tabShown, showTab, deleteTab }) {
     return (
         <>
             { tabArr.map(i => (
-                <TabMin tabShown={tabShown} showTab={showTab} key={i.id} />
+                <TabMin imageOfTheDayUrl={imageOfTheDayUrl} deleteTab={deleteTab} tabShown={tabShown} showTab={showTab} key={i.id} tabId={i.id} />
             ))}
         </>
     );

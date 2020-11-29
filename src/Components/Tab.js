@@ -2,11 +2,15 @@ import Shortcuts from './Shortcuts';
 import './Tab.css';
 import { useEffect, useState } from 'react';
 
-export default function Tab({ shown = false, showTab }) {
+export default function Tab({ imageOfTheDayUrl, shown = false, showTab }) {
 
     function back() {
         showTab(false);
     }
+
+    useEffect(()=>{
+        document.querySelector("#imgBg").style.backgroundImage = "url(https://www.bing.com"+ imageOfTheDayUrl +")";
+    }, [imageOfTheDayUrl])
 
     useEffect(() => {
         let tab = document.querySelector('#tab');
@@ -32,7 +36,7 @@ export default function Tab({ shown = false, showTab }) {
                     <span className="material-icons bars">menu</span>
                 </nav>
                 <main>
-                    <section className="imgbg"></section>
+                    <section id="imgBg" className="imgbg"></section>
                     <div className="ctntmain">
                         <input placeholder="Search or enter web address" />
                         <span className="material-icons-outlined srchico">photo_camera</span>
