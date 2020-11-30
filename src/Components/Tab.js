@@ -1,8 +1,9 @@
 import Shortcuts from './Shortcuts';
 import './Tab.css';
 import { useEffect, useState } from 'react';
+import TabCounterIcon from "./TabCounterIcon";
 
-export default function Tab({ imageOfTheDayUrl, shown = false, showTab }) {
+export default function Tab({tabsOpened, imageOfTheDayUrl, shown = false, showTab }) {
 
     function back() {
         showTab(false);
@@ -53,7 +54,9 @@ export default function Tab({ imageOfTheDayUrl, shown = false, showTab }) {
                     <span className="material-icons">navigate_before</span>
                     <span className="material-icons">navigate_next</span>
                     <span className="material-icons options">more_horiz</span>
-                    <span className="material-icons-outlined" onClick={back}>looks_one</span>
+                    <span onClick={back}>
+                        <TabCounterIcon tabsOpened={tabsOpened} />
+                    </span>
                     <span className="material-icons-outlined">share</span>
                 </div>
             </div >

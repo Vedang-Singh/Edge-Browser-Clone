@@ -55,7 +55,7 @@ function App() {
         </div>
         <TabList imageOfTheDayUrl={imageOfTheDayUrl} deleteTab={deleteTab} tabShown={tabShown} showTab={showTab} tabArr={tabsOpened} />
       </div>
-      <Tab imageOfTheDayUrl={imageOfTheDayUrl} shown={tabShown} showTab={showTab} />
+      <Tab tabsOpened={tabsOpened} imageOfTheDayUrl={imageOfTheDayUrl} shown={tabShown} showTab={showTab} />
     </>
   );
 }
