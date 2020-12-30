@@ -17,6 +17,7 @@ body {
     color: #555;
     font-family: 'Open Sans', sans-serif;
     background: #c9c9c9;
+    font-size: 14px;
 }
 
 nav {
@@ -25,15 +26,16 @@ nav {
     left: 0;
     width: 100vw;
     z-index: 1;
+    color: #555;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .1s;
 }
 
 nav span {
     padding: 15px 20px;
-    color: #555;
     font-size: 30px !important;
 }
 
@@ -44,6 +46,7 @@ nav span {
 
 span.tab-nav.active {
     border-bottom: 3px solid #59adf7;
+    color: #59adf7;
 }
 
 .bars {
